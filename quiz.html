@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Quiz</title>
+	</head>
+	<style type="text/css">
+		body {
+			margin: 0px;
+			font-family: monospace;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+		#header {
+			background-color: #333333;
+			color: white;
+			text-align: center;
+			width: 100%;
+			padding: 5px;
+		}
+		#main {
+			padding: 20px 0 50px 0;
+
+			color: #666666;
+			background-color: #f5f5e0;
+			border-bottom: 3px solid #333333;
+		}
+		#main p, #header p {
+			font-size: 2.2rem;
+		}
+		table {
+			text-align: left;
+		}
+		#q-nav {
+			margin-top: 50px;
+		}
+		button {
+			color: white;
+			background-color: #2d799f;
+			margin: 5px;
+			padding: 20px;
+			border: 0px;
+			border-radius: 5px;
+			text-decoration: none;
+		}
+		button:hover {
+			background-color: #3897c7;
+		}
+	</style>
+	<body>
+		<div id="header">
+			<p>Quiz on Important Facts</p>
+		</div>
+		<div id="main">
+			<p>Which one of these is a JavaScript package manager?</p>
+			<form>
+				<table align="center">
+					<tr>
+						<td><input type="radio" id="1" name="ans">a : Node.js</td>
+					</tr>
+					<tr>
+						<td><input type="radio" id="2" name="ans">b : TypeScript</td>
+					</tr>
+					<tr>
+						<td><input type="radio" id="3" name="ans">c : npm</td>
+					</tr>
+				</table>
+			</form>
+			<div id="q-nav">
+				<button>Previous Question</button>
+				<button>Next Question</button>
+			</div>
+		</div>
+	</body>
+</html>
