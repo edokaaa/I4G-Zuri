@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    background-color: #d6f5f5;
+}
+#header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0f3d3d;
+    color: white;
+}
+#container {
+    text-align: center;
+    padding: 40px;
+
+}
+table, th, td {
+    border: 1px solid #0f3d3d;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+thead {
+    border: 1px solid white;
+    background-color: #0f3d3d;
+    color: white;
+}
