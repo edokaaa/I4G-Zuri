@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+}
+#header {
+	padding: 40px;
+	background-color: #660033;
+	color: white;
+  text-align: center;
+}
+#container {
+  padding: 60px;
+}
+a {
+  color: white;
+  background-color: #660033;
+  margin: 5px;
+  padding: 20px;
+  border: 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 50px;
+}
+#footer {
+  text-align: center;
+}
+#image-div {
+  float: left;
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+}
+figcaption {
+    background-color: #660033;
+    color: #fff;
+    font-style: italic;
+    padding: 3px;
+    text-align: center;
+}
+
