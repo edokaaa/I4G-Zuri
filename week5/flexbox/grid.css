@@ -1,0 +1,118 @@
+@font-face {
+	font-family: header;
+	src: url(fonts/BigShouldersDisplay.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: body;
+	src: url(fonts/LexendDeca.ttf);
+	font-weight: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+	box-sizing: border-box;
+
+}
+
+body {
+	background-color: hsl(0, 0%, 95%);
+	font-family: body;
+	font-size: 15px;
+}
+
+main {
+	display: grid;
+	grid-template-areas:
+	'sedans suv luxury';
+	width: 70%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: row;
+}
+
+#main {
+	border-radius: 20px;
+
+}
+
+p {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 0.8rem;
+	margin-bottom: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: hsl(0, 0%, 95%);
+	font-family: header;
+	margin: 20px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	background-color: hsl(0, 0%, 95%);
+	border: 2px solid hsl(0, 0%, 95%);
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	margin: 20px 0 20px 0;
+}
+
+.card {
+	padding: 30px;
+}
+
+#sedans {
+	grid-area: sedans;
+	background-color: hsl(31, 77%, 52%);
+}
+
+#sedans a {
+	color: hsl(31, 77%, 52%);
+}
+
+#suv {
+	grid-area: suv;
+	background-color: hsl(184, 100%, 22%);
+
+}
+#suv a {
+	color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+	grid-area: luxury;
+	background-color: hsl(179, 100%, 13%);
+
+}
+
+#luxury a {
+	color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+	background-color: transparent;
+}
+
+#sedans a:hover {
+	color: white;
+}
+
+#suv a:hover {
+	color: white;
+}
+
+#luxury a:hover {
+	color: white;
+}
