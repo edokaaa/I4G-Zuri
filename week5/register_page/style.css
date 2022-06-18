@@ -1,0 +1,141 @@
+@font-face {
+	font-family: "PoppinsRegular";
+	src: url("fonts/Poppins-Regular.ttf");
+	font-weight: 400, 500, 600, 700;
+}
+
+@font-face {
+	font-family: "PoppinsBlack";
+	src: url("fonts/Poppins-SemiBold.ttf");
+	font-weight: 400, 500, 600, 700;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: PoppinsRegular;
+	font-size: 16px;
+}
+
+body {
+	background-color: hsl(0, 100%, 74%);
+	background-image: url("images/bg-intro-desktop.png");
+	background-repeat: x;
+}
+
+main {
+	display: flex;
+	width: 70%;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+#info {
+	color: white;
+	width: 100%;
+	margin: 20px;
+}
+
+#info h1 {
+	margin-bottom: 20px;
+	font-family: PoppinsBlack;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+#form-area {
+	width: 100%;
+	display: grid;
+	grid-template-areas:
+		"trail"
+		"form";
+	grid-gap: 15px;
+	margin: 20px;
+}
+
+#trial {
+	grid-area: trail;
+	background-color: hsl(248, 32%, 49%);
+	text-align: center;
+	width: 100%;
+	border-radius: 10px;
+	padding: 15px 30px;
+	color: white;
+}
+
+#form {
+	grid-area: form;
+	background-color: white;
+	width: 100%;
+	border-radius: 10px;
+	padding: 30px;
+	text-align: center;
+}
+
+.box {
+	box-shadow: 0px 8px hsl(0, 76%, 65%);
+}
+
+input {
+	border: 0.5px solid hsl(246, 25%, 77%);
+	color: hsl(249, 10%, 26%);
+	border-radius: 5px;
+	padding: 15px;
+	width: 100%;
+	font-weight: bold;
+}
+
+input:focus {
+	outline-color: hsl(246, 25%, 77%);
+}
+
+.input-box {
+	margin-bottom: 15px;
+}
+
+.claim {
+	background-color: hsl(154, 59%, 51%);
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px 30px;
+	color: white;
+	border: 0px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.form-footer p,
+span {
+	font-size: 10px;
+	font-weight: bold;
+	color: hsl(246, 25%, 77%);
+}
+
+span {
+	color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 375px), (orientation: portrait) {
+	body {
+		background-image: url("images/bg-intro-mobile.png");
+		background-repeat: x;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	#info {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+}
