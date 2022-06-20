@@ -1,0 +1,101 @@
+@font-face {
+	font-family: "Poppins";
+	src: url(fonts/Poppins-SemiBold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "OpenSans";
+	src: url(fonts/OpenSans-Regular.ttf);
+	font-weight: 400, 700;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: hsl(192, 100%, 9%);
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Poppins;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+p {
+	font-family: OpenSans;
+	margin-bottom: 20px;
+}
+
+main {
+	width: 100%;
+}
+
+.hero {
+	background-image: url(images/bg-hero-desktop.svg);
+	padding: 30px 50px;
+	height: 100vh;
+	background-color: hsl(193, 100%, 96%);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+/* .trail {
+	margin-left: 500px;
+} */
+
+.hero-main {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-main .info {
+	width: 40%;
+	margin-right: 50px;
+}
+
+.hero-main .hero-img {
+	width: 60%;
+}
+.hero-img {
+	height: 600px;
+	width: 100%;
+	background-image: url(images/illustration-mockups.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+button {
+	font-family: OpenSans;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 15px 40px;
+	border-radius: 15px;
+	border: 0;
+}
+.btn-white {
+	background-color: white;
+	box-shadow: 0px 3px 10px rgb(165, 165, 165);
+}
+.btn-pink {
+	margin-top: 20px;
+	color: white;
+	background-color: hsl(322, 100%, 66%);
+}
+
+@media (max-width: 375px), (orientation: portrait) {
+}
