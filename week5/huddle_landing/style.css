@@ -172,7 +172,7 @@ button {
 
 .overflow-box {
 	background-color: white;
-	border-radius: 10px;
+	border-radius: 20px;
 	box-shadow: 1px 1px 10px rgb(194, 194, 194);
 	padding: 60px;
 	width: 60%;
@@ -267,4 +267,132 @@ a {
 
 /* Footer ends */
 @media (max-width: 375px), (orientation: portrait) {
+	/* hero starts */
+	.hero {
+		background-image: url(images/bg-hero-mobile.svg);
+		text-align: center;
+	}
+	.hero-main {
+		flex-direction: column;
+	}
+	.hero-main .info {
+		width: 100vw;
+		margin-bottom: 50px;
+	}
+	.hero-main .hero-img {
+		width: 100%;
+	}
+
+	/* hero ends */
+
+	/* main-body starts */
+	.main-body {
+		text-align: center;
+	}
+
+	.box {
+		display: grid;
+		padding: 50px;
+	}
+	.box-info,
+	.box-img {
+		width: 100%;
+	}
+
+	/* will have to remove this line. */
+	/* After converting the widescreen to grid display */
+
+	.right,
+	.left {
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.grow-together {
+		grid-template-areas:
+			"grow-info"
+			"grow-img";
+	}
+	.grow-together .box-info {
+		grid-area: grow-info;
+	}
+	.grow-together .box-img {
+		grid-area: grow-img;
+	}
+
+	.flowing-conv {
+		grid-template-areas:
+			"flow-info"
+			"flow-img";
+	}
+	.flowing-conv .box-info {
+		grid-area: flow-info;
+	}
+	.flowing-conv .box-img {
+		grid-area: flow-img;
+	}
+
+	.your-users {
+		grid-template-areas:
+			"users-info"
+			"users-img";
+	}
+	.your-users .box-info {
+		grid-area: users-info;
+	}
+	.your-users .box-img {
+		grid-area: users-img;
+	}
+
+	.overflow-box {
+		padding: 50px 10px;
+		width: 80%;
+		justify-items: center;
+		align-items: center;
+		margin: auto;
+		text-align: center;
+	}
+	.overflow-box button {
+		padding: 20px 50px;
+		font-size: 0.8rem;
+	}
+	/* main-body ends */
+
+	/* footer starts */
+	footer {
+		padding: 30px;
+	}
+
+	footer p,
+	a {
+		font-size: 16px;
+	}
+
+	.footer-logo {
+		margin-bottom: 10px;
+	}
+
+	.footer-base {
+		flex-direction: column;
+	}
+
+	#contacts {
+		width: 100%;
+	}
+
+	.footer-links {
+		flex-direction: column;
+		width: 100%;
+	}
+	.socials {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.socials-copyright {
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	/* footer ends */
 }
